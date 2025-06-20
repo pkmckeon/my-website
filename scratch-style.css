@@ -1,0 +1,41 @@
+body {
+  background-color: #fff6fb;
+  font-family: 'Segoe UI', sans-serif;
+  color: #4b006e;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.nav {
+  background-color: #fce1ff;
+  padding: 10px;
+  text-align: left;
+}
+
+a {
+  color: #7a1fa2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.content-section {
+  background-color: #fff0ff;
+  border-left: 5px solid #7a1fa2;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.app-link {
+  text-align: center;
+  margin-top: 40px;
+}

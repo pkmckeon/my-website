@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Positive Vibes Generator</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #e0bbff, #c7ceea);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #4b006e;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 600px;
+      width: 90%;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    #vibeDisplay {
+      font-size: 20px;
+      margin: 30px 0;
+      min-height: 60px;
+    }
+
+    button {
+      background-color: #7a1fa2;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #5a0077;
+    }
+
+    a {
+      display: block;
+      margin-top: 20px;
+      color: #4b006e;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🌈 Positive Vibes Generator 🌞</h1>
+    <div id="vibeDisplay">Click the button to get a good vibe!</div>
+    <button onclick="generateVibe()">Generate Vibe</button>
+    <a href="scratch.html">← Back to Scratch Page</a>
+  </div>
+
+  <script>
+    const vibes = [
+      "You’re capable of amazing things.",
+      "Take a deep breath. You’ve got this.",
+      "Smile at someone today—it might make their day.",
+      "Your creativity is a gift. Share it!",
+      "Kindness is your superpower.",
+      "You bring joy to those around you.",
+      "Drink some water and stretch—you deserve care too!",
+      "Let today be the start of something new.",
+      "You’re doing better than you think.",
+      "Gratitude turns what we have into enough."
+    ];
+
+    function generateVibe() {
+      const randomIndex = Math.floor(Math.random() * vibes.length);
+      document.getElementById('vibeDisplay').textContent = vibes[randomIndex];
+    }
+  </script>
+</body>
+</html>
